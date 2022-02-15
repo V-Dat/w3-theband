@@ -1,0 +1,102 @@
+@media (min-width: 1024px) {
+
+}
+/* >= Tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  /* .btn-find {
+    display: none;
+  } */
+  .Button__Search {
+    display: none;
+  }
+
+}
+
+/* Tablet - PC low resolution width: 644px; */
+@media (max-width: 740px) {
+  
+  .sliders__Message{
+    display: none;
+  }
+
+  .flex-container{
+    flex-direction: column;
+  }
+
+  .tour-banners{
+    flex-direction: column;
+    margin: 0 0 0 -16px;
+  }
+  .tour-banners .flex-item{
+    width:100%;
+    background-color: #fff;
+    margin-bottom: 16px;
+  }
+
+  .leaveYourInfor{
+    flex-direction: column;
+  }
+  .band-infor{
+    padding: 0 8px;
+  }
+  .your-infor> input{
+    width: 100%;
+    left:0;
+    margin: 3px 0 0 0 ;
+  }
+
+  /* xử lý nav */
+  .navBar{
+    display: block;
+  }
+  .navItem  {
+    display: block;
+  }
+  .navItem > a {
+    display: block;
+  }
+
+  .navItem > a {
+    display: block;
+  }
+
+  .navItem:first-child {
+    display: inline-block;
+  }
+  .header-Button__Search {
+    display: none;
+  }
+  .header-Button__Menu {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+ 
+  .header{
+    height: 46px;
+    overflow: hidden;
+  }
+
+  .navItem.dropdown:hover .sub-NavBar{
+    display: block;
+    position: initial;
+  }
+
+  .navItem:hover .sub-NavItem{
+    display: block;
+    width: 100%;
+    background-color: #000;
+  }
+
+
+  .navBar .dropdown > ul{
+  }
+
+ .dropdown .sub-NavItem > a{
+    color: #fff;
+    padding-left: 32px;
+    display: block
+  }
+
+}

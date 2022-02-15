@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header id="header" class="header">
+        <ul class="navBar">
+            <li class="navItem"> <a href="#">HOME</a></li>
+            <li class="navItem"><a href="#band">BAND</a></li>
+            <li class="navItem"><a href="#tour">TOUR</a></li>
+            <li class="navItem"><a href="#contact">CONTACT</a></li>
+            <li class="navItem dropdown">
+                <a href="#">MORE <i class="fa fa-caret-down"></i></a>
+                <ul class="sub-NavBar">
+                    <li class="sub-NavItem"> <a href="#">Merchandise</a></li>
+                    <li class="sub-NavItem"> <a href="#">Extras</a></li>
+                    <li class="sub-NavItem"> <a href="#">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div class="header-Button__Search">
+            <i class="fa fa-search"></i>
+        </div>
+
+        <div id='menuMobile' class="header-Button__Menu">
+            <i class="fas fa-bars"></i>        
+        </div>
+
+    </header>
+
+
+    <div class="sliders">
+        <div class="sliders__Message pull-middle">
+            <h3>Chicago</h3>
+            <p>Thank you, Chicago - A night we won't forget.</p>
+        </div>
+    </div>
+
+    <div>
+        <div id= "band" class="content pull-middle">
+            <h2 class="heading">THE BAND</h2>
+            <p class="slogan">We love music</p>
+            <p class="description">
+                We have created a fictional band website. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.
+            </p>
+            <div class="flex-container">
+                <div class="flex-item member1">
+                    <p class="member-name">NAME</p>
+                    <img src="./assets/public/bandmember.jpg" alt="Không có hình">
+                </div>
+
+                <div class="flex-item member2">
+                    <p class="member-name">NAME</p>
+                    <img src="./assets/public/bandmember.jpg" alt="Không có hình">
+                </div>
+
+                <div class="flex-item member2">
+                    <p class="member-name">NAME</p>
+                    <img src="./assets/public/bandmember.jpg" alt="Không có hình">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="tour" class="tourdates-background">
+        <div class="tourdates pull-middle">
+            <h2 class="heading">TOUR DATES</h2>
+            <p class="slogan">Remember to book your tickets!</p>
+            <br />
+        
+            <ul class="border-tickets">
+                <li class="ticket">September <span class="soldout">Sold out</span></li>
+                <li class="ticket">October <span class="soldout">Sold out</span></li>
+                <li class="ticket">November<span class="ticket-number">3</span></li>
+            </ul>
+
+            <div class="tour-banners flex-contaier">
+                <div class="flex-item tour1">
+                    <img src="./assets//public/newyork.jpg" alt="Không có ảnh">
+                    <div class="tour-description">
+                        <h2 class="heading"><b>New York</b></h2>
+                        <p class="slogan">Fri 27 Nov 2016</p>
+                        <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="btn-buy">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="flex-item tour2">
+                    <img src="./assets//public/paris.jpg" alt="Không có ảnh">
+                    <div class="tour-description">
+                        <h2 class="heading"><b>Paris</b></h2>
+                        <p class="slogan">Sat 28 Nov 2016</p>
+                        <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="btn-buy">Buy Tickets</button>
+                    </div>
+                </div>
+
+                <div class="flex-item tour3">
+                    <img src="./assets//public/sanfran.jpg" alt="Không có ảnh">
+                    <div class="tour-description">
+                        <h2 class="heading"><b>San Francisco</b></h2>
+                        <p class="slogan">Sun 29 Nov 2016</p>
+                        <p class="description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                        <button class="btn-buy">Buy Tickets</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div id="contact" class="contact-background">
+        <div class="contact-container">
+            <h2 class="heading">CONTACT</h2>
+            <p class="slogan"><i>Fan? Drop a note!</i></p>
+
+            <div class="leaveYourInfor">
+                <div class="band-infor">
+                    <p><i class="fa fa-map-marker" style="width:30px"></i>Chicago, US</p>
+                    <p><i class="fa fa-phone" style="width:30px"></i>Phone: +00 151515</p>
+                    <p><i class="fa fa-envelope" style="width:30px"></i>Email: mail@mail.com</p>
+                </div>
+                <form class="form-input" action="">
+                    <div class="your-infor">
+                        <input class="input-name" type="text" placeholder="Name">
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div class="input-message">
+                        <input class="message" type="text" placeholder="Message">
+                    </div>
+                    <button class="btn-send">SEND</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+        <img src="/assets/public/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+    </div>
+
+    <footer class="footer">
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-snapchat hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-twitter hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+        <p class="w3-medium">Powered by
+            <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+        </p>
+    </footer>
+    <script src="index.js"></script>
+
+</body>
+
+</html>
