@@ -2,7 +2,7 @@ const menuMobile = document.querySelector(".header-Button__Menu")
 const header = document.querySelector(".header")
 const currentHeight = header.clientHeight
 const menuChose = document.querySelectorAll(".navItem a[href*='#']")
-const subNav = document.querySelector(".sub-NavBar")
+const subNavBar = document.querySelector(".sub-NavBar")
 const dropdown = document.querySelector(".dropdown")
 
 for( var i = 0 ; i < menuChose.length ; i++ ){
@@ -16,21 +16,28 @@ for( var i = 0 ; i < menuChose.length ; i++ ){
     }
 }
 
-
 menuMobile.onclick = function(){
     isOpen = header.clientHeight === currentHeight
     if(isOpen){header.style.height ='auto' ; header.overflow ='auto'}
     else{header.style.height = '46px'}
 };
 
-subNav.onclick = function(event) {
-    subNav.style.display = 'none';
+subNavBar.onclick = function(event) {
+    subNavBar.style.display = 'none';
     event.stopPropagation();
 }
+
+subNavBar.onmouseout = function(event) {
+    subNavBar.style.display = 'none';
+}
+dropdown.onmouseout = function(){
+    subNavBar.style.display = 'none'
+}
 dropdown.onclick = function(){
-    subNav.style.display = 'block'
+    subNavBar.style.display = 'block'
 }
 
 dropdown.onmouseover = function(){
-    subNav.style.display = 'block'
+    subNavBar.style.display = 'block'
 }
+

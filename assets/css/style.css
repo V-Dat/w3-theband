@@ -88,7 +88,7 @@ nhưng sao lại padding top 50%??*/
 .sliders{
   padding-top: 50%;
   margin-top: 46px;
-  background: url(/assets/public/chicago.jpg) top center / cover no-repeat; 
+  background: url('../public/chicago.jpg') top center / cover no-repeat; 
   position: relative;
 }
 .sliders__Message{
