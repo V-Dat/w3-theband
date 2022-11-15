@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,13 +5,13 @@
   text-decoration: none;
   list-style-type: none;
 }
-.navItem > a{
+.navItem > a {
   display: inline-block;
   padding: 0 24px;
 }
 
-/*header  -- .header có thuộc tính top 0% rất quan trọng nếu không có các phần tử relative sẽ nhảy lên nhau*/ 
-.header{
+/*header  -- .header có thuộc tính top 0% rất quan trọng nếu không có các phần tử relative sẽ nhảy lên nhau*/
+.header {
   position: fixed;
   background-color: #000;
   width: 100%;
@@ -20,78 +19,83 @@
   line-height: 46px;
   z-index: 1;
 }
-.navBar{
+.navBar {
   display: inline-block;
   padding: 0;
 }
-.navItem{
+.navItem {
   display: inline-block;
   color: #fff;
 }
-.navItem>a{
+.navItem > a {
   color: #fff;
   display: inline-block;
 }
-.navItem:hover{
+.navItem:hover {
   background-color: #ccc;
   cursor: pointer;
 }
 
-.navItem:hover .sub-NavItem{
+.navItem:hover .sub-NavItem {
   display: block;
-  background-color: #fff
+  background-color: #fff;
 }
 
-.dropdown{
+.dropdown {
   position: relative;
 }
 
-.dropdown:hover .sub-NavBar{
-  display:block;
+.dropdown:hover .sub-NavBar {
+  display: block;
 }
 
-.dropdown .sub-NavItem > a{
+.dropdown .sub-NavItem > a {
   color: #000;
   display: block;
   padding: 0 24px 0 16px;
 }
-.sub-NavItem:hover{
+.sub-NavItem:hover {
   background-color: #ccc !important;
 }
-.sub-NavBar{
+.sub-NavBar {
   display: none;
   position: absolute;
-  left:0;
+  left: 0;
   padding-left: 0;
+  box-shadow: -4px 13px 20px 4px grey;
 }
 
-.header-Button__Search{
+.header-Button__Search {
   color: #fff;
   float: right;
-  line-height:46px;
+  line-height: 46px;
   padding: 0 24px;
 }
-.header-Button__Search:hover{background-color: rgb(233, 57, 57)}
+.header-Button__Search:hover {
+  background-color: rgb(233, 57, 57);
+}
 
-.header-Button__Menu{
+.header-Button__Menu {
   color: #fff;
   float: right;
-  line-height:46px;
+  line-height: 46px;
   padding: 0 24px;
-  display:none
+  display: none;
 }
-.header-Button__Menu:hover{background-color: rgb(233, 57, 57)}
+.header-Button__Menu:hover {
+  background-color: rgb(233, 57, 57);
+}
 
 /* slider --.slider chính là div để hình ảnh và là div contaier --- 
 marign 46px để không bị trồng lên .header 
 nhưng sao lại padding top 50%??*/
-.sliders{
+.sliders {
   padding-top: 50%;
   margin-top: 46px;
-  background: url('../public/chicago.jpg') top center / cover no-repeat; 
+  background: url("../public/chicago.jpg") top center / cover no-repeat;
   position: relative;
 }
-.sliders__Message{
+.sliders__Message {
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -100,57 +104,75 @@ nhưng sao lại padding top 50%??*/
   text-align: center;
   padding: 32px 16px;
 }
-.sliders__Message h3{margin: 10px 0;}
-.sliders__Message p{margin: 15px 0;}
+.sliders__Message h3 {
+  margin: 10px 0;
+}
+.sliders__Message p {
+  margin: 15px 0;
+}
 /*Content*/
-.heading{margin: 10px 0;}
-.slogan{margin: 15px 0;}
-.description{margin: 15px 0; text-align: justify}
+.heading {
+  margin: 10px 0;
+}
+.slogan {
+  margin: 15px 0;
+}
+.description {
+  margin: 15px 0;
+  text-align: justify;
+}
 
-.pull-middle{
+.pull-middle {
   max-width: 800px;
   margin: auto;
   padding: 64px 16px;
   text-align: center;
 }
 
-.flex-container{
+.flex-container {
   display: flex;
 }
 
-.member1 .member-name , .member2 .member-name , .member3 .member-name{
+.member1 .member-name,
+.member2 .member-name,
+.member3 .member-name {
   margin: 15px 0;
 }
-.member1 img,.member2 img,.member3 img{
+.member1 img,
+.member2 img,
+.member3 img {
   width: 60%;
   border-radius: 5px;
 }
 /*TourDates*/
-.tourdates-background{
+.tourdates-background {
   background-color: #000;
   color: #fff;
 }
 
-.tourdates .slogan{color: #ddd; font-style: italic;}
-.tourdates .border-tickets{
-  padding-left:0;
+.tourdates .slogan {
+  color: #ddd;
+  font-style: italic;
+}
+.tourdates .border-tickets {
+  padding-left: 0;
   text-align: left;
-  background-color:#fff
+  background-color: #fff;
 }
 
-.ticket{
+.ticket {
   padding: 8px 16px;
   color: #000;
   border-bottom: 2px solid #ddd;
 }
-.ticket .soldout{
-  background-color:#f44336;
+.ticket .soldout {
+  background-color: #f44336;
   padding: 2px 8px;
   margin-left: 16px;
   color: #fff;
 }
 
-.ticket-number{
+.ticket-number {
   float: right;
   background-color: #000;
   color: #ccc;
@@ -160,31 +182,33 @@ nhưng sao lại padding top 50%??*/
   border-radius: 50%;
 }
 
-.tour-banners{
+.tour-banners {
   padding: 32px 8px;
   margin: 0 -16px;
   display: flex;
 }
-.tour-banners .flex-item{
-  width:33%;
+.tour-banners .flex-item {
+  width: 33%;
   background-color: #fff;
-  margin: 0 8px
+  margin: 0 8px;
 }
-.tour1 > img,.tour2 > img,.tour3 >img {
+.tour1 > img,
+.tour2 > img,
+.tour3 > img {
   width: 100%;
 }
-.tour-description{
+.tour-description {
   text-align: left;
   padding: 0 16px;
-  color:#000
+  color: #000;
 }
 
-.btn-buy{
+.btn-buy {
   padding: 8px 16px;
   background-color: #000;
   color: #fff;
   border: none;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
 /* contact*/
 
@@ -198,7 +222,6 @@ nhưng sao lại padding top 50%??*/
   margin: auto;
   text-align: center;
 }
-
 
 .leaveYourInfor {
   display: flex;
@@ -264,6 +287,6 @@ input {
   text-decoration: underline;
 }
 
-.hover-opacity:hover{
+.hover-opacity:hover {
   opacity: 0.3;
 }
