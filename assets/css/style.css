@@ -5,6 +5,10 @@
   text-decoration: none;
   list-style-type: none;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 .navItem > a {
   display: inline-block;
   padding: 0 24px;
